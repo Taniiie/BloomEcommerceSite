@@ -6,7 +6,7 @@ Bloom is a premium, minimalist e-commerce experience designed for a high-end bot
 
 ![Bloom Preview](https://lh3.googleusercontent.com/aida-public/AB6AXuB0pFTR_ZRqKdy6Y4IPeErIcavrWzmLoeRjOZ_w3vohPPouNIIKjQiOMjAnPr1MCbvAXufPS3ZUd9FLiOHbB7C3RvyL820cvWcCVkMPHQxkj8nidwUCmmSADkUfcXnGVWwrCzVbfeoNxTClUZDR3nCQQyH1EDADuyQH757TMzEyLirhsULscqI70TbYVnnYrsZDXHQ32txMDwNLdB1AVaJYAH2yaw2AQ-ANiKHqGAJLuXx-fAYmd1gnn9Hw60hEtUbNi2h5xw_ODliG)
 
-## 🎨 The Design Philosophy
+##  The Design Philosophy
 
 The aesthetic is built on the **"Tonal Layering"** principle. Instead of using harsh borders and dividing lines, Bloom uses subtle Background Color Shifts to define hierarchy.
 
@@ -14,7 +14,7 @@ The aesthetic is built on the **"Tonal Layering"** principle. Instead of using h
 *   **Typography**: A tension between the refined **Noto Serif** (Editorial Voice) and the geometric **Plus Jakarta Sans** (Functional UI).
 *   **Aesthetics**: Glassmorphism navigation, ultra-diffused shadows, and large 3rem radii for a "soft" brand personality.
 
-## 📁 Project Structure
+##  Project Structure
 
 The codebase is structured to be lightweight and performant, utilizing Vanilla JS and Tailwind CSS (CDN) for rapid, bespoke styling.
 
@@ -32,14 +32,14 @@ The codebase is structured to be lightweight and performant, utilizing Vanilla J
     └── main.js          # Cart logic & shared UI interactions
 ```
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 *   **Core**: HTML5, Vanilla JavaScript.
 *   **Styling**: Tailwind CSS (Utility-first framework).
 *   **Fonts**: Google Fonts (Noto Serif & Plus Jakarta Sans).
 *   **Icons**: Material Symbols Outlined (Custom light-weight settings).
 
-## 🚀 Getting Started
+##  Getting Started
 
 Simply open `index.html` in any modern web browser to enter the Atelier. No build step or installation required.
 
