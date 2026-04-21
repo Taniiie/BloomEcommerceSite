@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Catalog | Bloom Botanical Atelier</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#466054",
+                        "secondary-container": "#daf8e8",
+                        "primary": "#7c5556",
+                        "primary-dim": "#6e494a",
+                        "secondary": "#4b6559",
+                        "tertiary": "#676033",
+                        "tertiary-container": "#fdf1b8",
+                        "surface": "#faf9f6",
+                        "surface-container-low": "#f4f4f0",
+                        "surface-container-high": "#e8e8e4",
+                        "surface-container-highest": "#e1e3df",
+                        "on-surface": "#303330",
+                        "on-surface-variant": "#5d605c",
+                        "outline-variant": "#b1b2af",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface selection:bg-primary/10">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+        <a href="index.html" class="text-3xl font-serif italic text-primary">Bloom</a>
+        <div class="hidden md:flex items-center space-x-10">
+            <a class="text-primary border-b-2 border-primary/20 pb-1 font-serif tracking-tight" href="catalog.html">Shop</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="sustainability.html">Sustainability</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="about.html">Our Story</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="journal.html">Journal</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="cart.html" class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="shopping_cart">shopping_cart</a>
+            <button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="person">person</button>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-32 pb-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+    <header class="mb-16 max-w-3xl">
+        <h1 class="text-6xl font-serif mb-6 leading-tight tracking-tight">Curated Botanical <span class="italic text-primary">Essentials</span></h1>
+        <p class="text-on-surface-variant text-lg leading-relaxed">A thoughtful collection of artisanal wellness products, sourced from sustainable growers and crafted with botanical precision.</p>
+    </header>
+
+    <div class="flex flex-col lg:flex-row gap-16">
+        <!-- Sidebar Filters -->
+        <aside class="w-full lg:w-64 flex-shrink-0 space-y-10">
+            <div class="space-y-4">
+                <h3 class="font-headline text-xl text-on-surface">Categories</h3>
+                <div class="flex flex-col gap-3">
+                    <button class="text-left py-2 px-4 rounded-full bg-secondary-container text-on-secondary-container font-medium text-sm flex justify-between items-center">
+                        All Collections <span class="text-xs opacity-60">42</span>
+                    </button>
+                    <button class="text-left py-2 px-4 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors text-sm flex justify-between items-center">
+                        Aromatherapy <span class="text-xs opacity-40">12</span>
+                    </button>
+                    <button class="text-left py-2 px-4 rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors text-sm flex justify-between items-center">
+                        Skin Rituals <span class="text-xs opacity-40">08</span>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-surface-container-low p-8 rounded-xl space-y-4">
+                <p class="font-serif italic text-primary">"The Earth laughs in flowers."</p>
+                <p class="text-xs tracking-widest uppercase text-on-surface-variant">Ralph Waldo Emerson</p>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="flex-grow">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-16">
+                <!-- Product Card 1 -->
+                <div class="group cursor-pointer hover-lift rounded-lg overflow-hidden pb-4" onclick="window.location.href='product.html'">
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-high mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPXM6ozmtWtM2Y7l3euEFWAttRzSYfxIN25NL4LfDHID_LbStCqe_DjCWDqdVKKNWWq--14tS0E4AR3YCpdmYV5AJzQbtGs_Qci2Sgp0_ABaEEkAGBRRcIr8DBmkxp9xpe9MgsafL0_XAefmjylvXbNclCV77bpt7oVzJ5xFrNp7ir2OU_TGg78ULwdGZiySbp8uERWOQVeRKPjzp4l0i8lZt-i-vGR-1kgdmuC5shwsiM92gGnj0jDpnx4SxJ2m9VBmKuh_NGye1b" alt="Product"/>
+                        <div class="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <button class="w-full py-3 primary-gradient text-white rounded-full font-label text-sm font-medium shadow-xl add-to-cart-btn" data-name="Wild Rose Ritual Oil" data-price="48" onclick="event.stopPropagation();">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-serif">Wild Rose Ritual Oil</h3>
+                            <span class="text-on-surface-variant font-body">$48</span>
+                        </div>
+                        <p class="text-on-surface-variant text-sm font-body uppercase tracking-wider">Apothecary</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="group cursor-pointer hover-lift rounded-lg overflow-hidden pb-4" onclick="window.location.href='product.html'">
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-high mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5DyA0QKoKKh7eRm9Lk7jKS1itMni4L9qs_GLkc-TPaDivdbjTtNaSyCP4TvZ0cgGIAAfDw20-_tlI05FKscqeCqt7f-rgQaEYW6-RXZCvcEUQphDxYr3xmbVkMKQBwbLs7iTa5OIj9Lyz-DwEKisoKyXhwfIlmMVv1ymaANnBjlm8TRcKDI_YLcTmuDY1cbj8eYbhMET9PIzVzjdJg8D4d9mMCPFr3EQGeuhih1SBNXF6fDYaHMI7GBEP1tIyC6nc1kW247tfQOD9" alt="Product"/>
+                        <div class="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <button class="w-full py-3 primary-gradient text-white rounded-full font-label text-sm font-medium shadow-xl add-to-cart-btn" data-name="Clay & Cedar Cleansing Bar" data-price="16" onclick="event.stopPropagation();">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-serif">Clay & Cedar Cleansing Bar</h3>
+                            <span class="text-on-surface-variant font-body">$16</span>
+                        </div>
+                        <p class="text-on-surface-variant text-sm font-body uppercase tracking-wider">Skin Rituals</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group cursor-pointer hover-lift rounded-lg overflow-hidden pb-4" onclick="window.location.href='product.html'">
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-high mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3wczaIricgazh612STQdNrZy_4aAwW7TJmgVt5ZZu6INQh1g53OUlZ3b9RDpMaO0-VfrK022-_HDjPloiVZDZvlwBihS5nm7x6Ka7_IaVoBZvCNZSJ5-mgOXQSriUSTjS2sn2t21U1wwTU5kLZHUlsg2IZOh7XKb5xVTd18cV_LMt0eJniI9PCSlAIx-_hbhZKGZAiqR-Cl4W9cGFf7Yyym7U2Xyzyj2Q3j8FhFcdGg_wwALlaNzp1gRwEwGEIYJW3gZbxNTyznj9" alt="Product"/>
+                        <div class="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <button class="w-full py-3 primary-gradient text-white rounded-full font-label text-sm font-medium shadow-xl add-to-cart-btn" data-name="The Solstice Bouquet" data-price="85" onclick="event.stopPropagation();">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-serif">The Solstice Bouquet</h3>
+                            <span class="text-on-surface-variant font-body">$85</span>
+                        </div>
+                        <p class="text-on-surface-variant text-sm font-body uppercase tracking-wider">Dried Florals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-24 flex flex-col items-center gap-6">
+                <button class="px-10 py-4 bg-surface-container-highest text-on-surface rounded-full text-sm font-medium hover:bg-surface-container-high transition-colors">
+                    Discover More
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="w-full rounded-t-[3rem] bg-stone-100 mt-20">
+    <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-screen-2xl mx-auto">
+        <div class="mb-12 md:mb-0">
+            <div class="text-2xl font-serif text-primary mb-2">Bloom</div>
+            <p class="text-stone-500 font-sans uppercase tracking-widest text-[10px]">Botanical Atelier</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-x-12 gap-y-6">
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="sustainability.html">Sustainability</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Shipping</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Privacy</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Contact</a>
+        </div>
+        <div class="mt-12 md:mt-0 text-stone-500 font-sans uppercase tracking-widest text-xs">
+            © 2024 Bloom Botanical Atelier.
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

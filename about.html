@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Our Story | Bloom Botanical Atelier</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#466054",
+                        "secondary-container": "#daf8e8",
+                        "primary": "#7c5556",
+                        "primary-dim": "#6e494a",
+                        "secondary": "#4b6559",
+                        "tertiary": "#676033",
+                        "tertiary-container": "#fdf1b8",
+                        "surface": "#faf9f6",
+                        "surface-container-low": "#f4f4f0",
+                        "surface-container-high": "#e8e8e4",
+                        "surface-container-highest": "#e1e3df",
+                        "on-surface": "#303330",
+                        "on-surface-variant": "#5d605c",
+                        "outline-variant": "#b1b2af",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface selection:bg-primary/10">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+        <a href="index.html" class="text-3xl font-serif italic text-primary">Bloom</a>
+        <div class="hidden md:flex items-center space-x-10">
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="catalog.html">Shop</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="sustainability.html">Sustainability</a>
+            <a class="text-on-surface border-b-2 border-primary/20 pb-1 font-serif tracking-tight" href="about.html">Our Story</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="journal.html">Journal</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="cart.html" class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="shopping_cart">shopping_cart</a>
+            <button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="person">person</button>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-32 pb-20 px-6 md:px-12 max-w-screen-4xl mx-auto">
+    <section class="mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h1 class="text-7xl font-serif mb-8 leading-[1.1] tracking-tight">Crafting <span class="italic text-primary">Airy Silence</span></h1>
+                <p class="text-lg text-on-surface-variant leading-relaxed mb-6">Bloom began as a small experiment in Portland, focused on the quiet art of botanical preservation. We believe that nature shouldn't just be viewed, it should be lived with.</p>
+                <p class="text-lg text-on-surface-variant leading-relaxed">Our atelier works with local growers to capture the ephemeral beauty of the seasons, turning fragile moments into lasting artifacts for your home.</p>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-2xl">
+                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPt95EahNMaFR8cBYFqUj17qPKVxwsdBZtLnhIzCxg-uMb-HVLADhD6Mbnn05TgTHaItJQg3Hpbdqc-pbVOwHXbBa7vPhyQP24SPhL0oITIMugZcupFDly2wF-49BO1EsjVA1H0p6W16FOVi3wLev6GwVlCZDXA4rmKvCNpFFtYjFqLpqxfhCfCljcunDPgmA6xENaD3xWr90bBM5c1KFlIAPgs9sRR-yQGK2_PwtQa2rUg3eb__APQbjL5kG_hup_LAx_-ZHji5B0" alt="Atelier"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 border-t border-outline-variant/10">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+            <h2 class="text-4xl font-serif mb-6">Our Philosophy</h2>
+            <p class="text-on-surface-variant italic leading-relaxed">"High-end design is defined by what you leave out."</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="p-10 bg-surface-container-low rounded-xl text-center">
+                <h3 class="text-2xl font-serif mb-4">Intentionality</h3>
+                <p class="text-on-surface-variant text-sm">Every stem is chosen for its architectural grace and seasonal relevance.</p>
+            </div>
+            <div class="p-10 bg-surface-container-low rounded-xl text-center">
+                <h3 class="text-2xl font-serif mb-4">Tactility</h3>
+                <p class="text-on-surface-variant text-sm">We prioritize materials that feel as good as they look—raw ceramics and hand-tied linen.</p>
+            </div>
+            <div class="p-10 bg-surface-container-low rounded-xl text-center">
+                <h3 class="text-2xl font-serif mb-4">Brevity</h3>
+                <p class="text-on-surface-variant text-sm">We celebrate the fleeting. Our arrangements change as the earth does.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="w-full rounded-t-[3rem] bg-stone-100 mt-20">
+    <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-screen-2xl mx-auto">
+        <div class="mb-12 md:mb-0">
+            <div class="text-2xl font-serif text-primary mb-2">Bloom</div>
+            <p class="text-stone-500 font-sans uppercase tracking-widest text-[10px]">Botanical Atelier</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-x-12 gap-y-6">
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="sustainability.html">Sustainability</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Shipping</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Privacy</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Contact</a>
+        </div>
+        <div class="mt-12 md:mt-0 text-stone-500 font-sans uppercase tracking-widest text-xs">
+            © 2024 Bloom Botanical Atelier.
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sustainability | Bloom Botanical Atelier</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#466054",
+                        "secondary-container": "#daf8e8",
+                        "primary": "#7c5556",
+                        "primary-dim": "#6e494a",
+                        "secondary": "#4b6559",
+                        "tertiary": "#676033",
+                        "tertiary-container": "#fdf1b8",
+                        "surface": "#faf9f6",
+                        "surface-container-low": "#f4f4f0",
+                        "surface-container-high": "#e8e8e4",
+                        "surface-container-highest": "#e1e3df",
+                        "on-surface": "#303330",
+                        "on-surface-variant": "#5d605c",
+                        "outline-variant": "#b1b2af",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface selection:bg-primary/10">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+        <a href="index.html" class="text-3xl font-serif italic text-primary">Bloom</a>
+        <div class="hidden md:flex items-center space-x-10">
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="catalog.html">Shop</a>
+            <a class="text-primary border-b-2 border-primary/20 pb-1 font-serif tracking-tight" href="sustainability.html">Sustainability</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="about.html">Our Story</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="journal.html">Journal</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="cart.html" class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="shopping_cart">shopping_cart</a>
+            <button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="person">person</button>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-24">
+    <!-- Hero Section -->
+    <section class="px-6 md:px-12 py-20 max-w-screen-2xl mx-auto overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 z-10">
+                <span class="text-secondary font-label uppercase tracking-widest text-xs mb-4 block">Our Commitment</span>
+                <h1 class="text-5xl md:text-7xl text-on-surface leading-tight mb-8">Nurturing the <span class="italic text-primary">Earth</span> that Nurtures Us</h1>
+                <p class="text-on-surface-variant text-lg leading-relaxed max-w-md">At Bloom, sustainability isn't a goal; it's our root system. Every petal we source and every package we wrap is a testament to our reverence for nature.</p>
+            </div>
+            <div class="lg:col-span-7 relative">
+                <div class="aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-xl bg-surface-container-low">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Yt52zcoNtlIGXrqprB096JHjs-qiyjfD2ERvihrcaioagBAxVjkcagi0-IYS10eaAVi25qqocHqnOCbGRwLMuhqRRPzleVFbuFTo6NMYjMqbQQvds-csQPyTuVe_e3kxoweuOaQWEJzQ8sZbciO9AR7NvVWdACDuGw4vQLR0PirbPfVfijGD9h7hnbsr_tW_mXE2AXbMbU4YbftWy4_Qh5oQvES8P43HoU3OwYN0SBBhaKpQP6TfnNzR3M6HHk6vz6MY2-PtLomx" alt="Landscape"/>
+                </div>
+                <div class="absolute -bottom-10 -left-10 hidden md:block w-64 h-80 rounded-lg overflow-hidden border-[12px] border-surface shadow-xl">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH_iWX3V-xt9IC287oMt4PXT11KgYgnIsGB2acw8HTwNEleN3v_HmINzMoHK_pz9IKaOPMZhwKkvQ1fj9tSjZuR3-z2TWxQFgUhQ_7GHuMxmK2PqHog-aRQvr6iaZpMC7k-ufhocFXuuElRaeOws9C3EkQdN_pa25nVXHISQaRFmiNZmGWz6aBPTwzf2NJ_3wFS3eWw_nGioOEG3EwC-1CHM1smyj_fYOau11qgQD3FZ2X5gLIjvHxAF_OfFmOuhgfWGxILT2sVm1V" alt="Hands in Soil"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="bg-surface-container-low py-32 px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl text-on-surface mb-12 italic">"We believe beauty should never come at the expense of our planet's future."</h2>
+            <div class="flex flex-col md:flex-row gap-12 justify-center items-start text-left">
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Zero-Waste Vision</h3>
+                    <p class="text-on-surface-variant">We are on a journey to eliminate non-recyclable waste across our entire supply chain by 2026.</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Carbon Conscious</h3>
+                    <p class="text-on-surface-variant">From solar-powered ateliers to carbon-neutral shipping, our footprint is light and deliberate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="px-6 md:px-12 py-32 max-w-screen-2xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+            <div class="order-2 md:order-1">
+                <div class="rounded-xl overflow-hidden bg-surface-container-high aspect-square">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsmMRzkOUDPXCfu-RJSib3kn88uGgNMZ8zl76vmetlKivNkTqcUZNEjhbykjQFDdGNGKGJ-h8kOPaKNwiP-USfKSKEkRaTicIM3hB_zrYF2at-qVSnxFjlvq7OfGbgE6e-MkbWeXzDoWpzRhVVboBZ54DecwRa6SdcEbNQdbLioKxRgIC_b1KEMabJvN4dQD6M33fa0s_IZfYKvQ85gj_2FKBfhavtEogcWieRdBCbjlv4Edn_iQ67Lus-fm5tAjBH5iFosBEg6gCG" alt="Packaging"/>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <span class="text-tertiary font-label uppercase tracking-widest text-xs mb-4 block">Sustainable Craft</span>
+                <h2 class="text-4xl md:text-5xl text-on-surface mb-8">Conscious Packaging</h2>
+                <p class="text-on-surface-variant mb-10 leading-relaxed">Our boxes are crafted from 100% recycled paper pulp and printed with algae-based inks.</p>
+                <ul class="space-y-6">
+                    <li class="flex gap-4 items-start">
+                        <span class="material-symbols-outlined text-secondary">eco</span>
+                        <div>
+                            <h4 class="font-bold text-on-surface">Compostable Materials</h4>
+                            <p class="text-sm text-on-surface-variant">Everything we ship can be recycled or composted at home.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="material-symbols-outlined text-secondary">water_drop</span>
+                        <div>
+                            <h4 class="font-bold text-on-surface">Water-Based Inks</h4>
+                            <p class="text-sm text-on-surface-variant">Eliminating harmful chemical runoff in our printing process.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="w-full rounded-t-[3rem] bg-stone-100 mt-20">
+    <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-screen-2xl mx-auto">
+        <div class="mb-12 md:mb-0">
+            <div class="text-2xl font-serif text-primary mb-2">Bloom</div>
+            <p class="text-stone-500 font-sans uppercase tracking-widest text-[10px]">Botanical Atelier</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-x-12 gap-y-6">
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="sustainability.html">Sustainability</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Shipping</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Privacy</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Contact</a>
+        </div>
+        <div class="mt-12 md:mt-0 text-stone-500 font-sans uppercase tracking-widest text-xs">
+            © 2024 Bloom Botanical Atelier.
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

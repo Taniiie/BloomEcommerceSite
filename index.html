@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Bloom Botanical Atelier | Petals of Soft Silence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#466054",
+                        "secondary-container": "#daf8e8",
+                        "primary": "#7c5556",
+                        "primary-dim": "#6e494a",
+                        "secondary": "#4b6559",
+                        "tertiary": "#676033",
+                        "tertiary-container": "#fdf1b8",
+                        "surface": "#faf9f6",
+                        "surface-container-low": "#f4f4f0",
+                        "surface-container-high": "#e8e8e4",
+                        "surface-container-highest": "#e1e3df",
+                        "on-surface": "#303330",
+                        "on-surface-variant": "#5d605c",
+                        "outline-variant": "#b1b2af",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface selection:bg-primary/10">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+        <a href="index.html" class="text-3xl font-serif italic text-primary">Bloom</a>
+        <div class="hidden md:flex items-center space-x-10">
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="catalog.html">Shop</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="sustainability.html">Sustainability</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="about.html">Our Story</a>
+            <a class="text-on-surface hover:text-primary transition-colors font-serif tracking-tight" href="journal.html">Journal</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="cart.html" class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="shopping_cart">shopping_cart</a>
+            <button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="person">person</button>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-24 overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="relative px-8 md:px-12 py-16 min-h-[80vh] flex items-center">
+        <div class="max-w-screen-2xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 z-10">
+                <span class="text-secondary font-label uppercase tracking-[0.3em] text-xs mb-6 block">Botanical Atelier</span>
+                <h1 class="text-6xl md:text-8xl font-serif leading-[1.1] text-on-surface mb-8 tracking-tight italic">
+                    Petals of <br/>
+                    <span class="font-normal not-italic">Soft Silence</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg max-w-md mb-10 leading-relaxed">
+                    Curated floral arrangements and botanical artifacts designed to breathe life and light into your sanctuary.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="catalog.html" class="primary-gradient text-white px-10 py-5 rounded-full font-label font-medium tracking-wide shadow-lg hover:opacity-90 transition-all">
+                        Shop Now
+                    </a>
+                    <a href="catalog.html" class="text-on-surface font-label text-sm border-b border-outline-variant/30 pb-1 hover:border-primary transition-all">
+                        View Collection
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-7 relative">
+                <div class="aspect-[4/5] rounded-xl overflow-hidden relative shadow-2xl">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0pFTR_ZRqKdy6Y4IPeErIcavrWzmLoeRjOZ_w3vohPPouNIIKjQiOMjAnPr1MCbvAXufPS3ZUd9FLiOHbB7C3RvyL820cvWcCVkMPHQxkj8nidwUCmmSADkUfcXnGVWwrCzVbfeoNxTClUZDR3nCQQyH1EDADuyQH757TMzEyLirhsULscqI70TbYVnnYrsZDXHQ32txMDwNLdB1AVaJYAH2yaw2AQ-ANiKHqGAJLuXx-fAYmd1gnn9Hw60hEtUbNi2h5xw_ODliG" alt="Hero Image"/>
+                </div>
+                <div class="absolute -bottom-12 -left-12 hidden xl:block w-72 aspect-square rounded-lg overflow-hidden ghost-border p-2 bg-surface">
+                    <img class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASHCoPS3GyT2fac_F4kcJoX81PhQpo91FJB-H9VxAcy4QuzUl4cbg1X6Vf6V-BewG1BbFyCn6IbIUGTGUok4syU7LNWyKafF_xq0gaVTwwJW5F8wqa-dGhyQJj4_7weWROkSjrrE35whOfgKHbd7pY84lITMpVWaQwcXIARHNqf0yAs6PH7z5DjIZqRDrNEEBoMy1s3G7tJpXbY-KB7f0I-5C91JF69H9S1cX4lfWTB7rR3MCe0l7ySXyBLUWdPseeUyQX5Jkliqd9" alt="Macro Petal"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Highlight -->
+    <section class="bg-surface-container-low py-32 px-8 md:px-12">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-5xl font-serif text-on-surface mb-6">The Vernal Awakening</h2>
+                    <p class="text-on-surface-variant text-lg">Our seasonal collection focuses on the fragile beauty of early bloomers—mimosa, anemones, and wild sweet peas.</p>
+                </div>
+                <a class="text-secondary font-label font-bold uppercase tracking-widest text-xs flex items-center gap-2 group" href="catalog.html">
+                    Explore Season <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                <!-- Card 1 -->
+                <div class="space-y-6 pt-12 cursor-pointer hover-lift rounded-lg overflow-hidden" onclick="window.location.href='product.html'">
+                    <div class="aspect-[3/4] rounded-lg overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeEgWQ6slXGMz9knjT8YNekdAupR3snIZY_iDU-bn5ZHrtjnzFI3RQtYU7fcPxDKh9YBo439ZJ1T_XR0Lr7EuLsRlqZ61JOl0vx4xym2Un6JT2genjqGGPDiN4EQK0Bx5CjaN2Zm-QupIPI92HoxYU-zTclVNXwKwGrS-6Qu7vHpKUsqDC-gpfQHvMRUD42V2ZDpdQ5HI0xmt8aF-BOt7Z0Mf8gfZYSpnLODWPxB56FpzYY5VrWu6f1qAJZ6X6UlFLHHs4ZJISC5NL" alt="Mimosa"/>
+                    </div>
+                    <div class="px-2 pb-4">
+                        <h3 class="font-serif text-2xl text-on-surface">Golden Mimosa</h3>
+                        <p class="text-on-surface-variant font-label text-sm mt-1">$48.00</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="space-y-6 cursor-pointer hover-lift rounded-lg overflow-hidden" onclick="window.location.href='product.html'">
+                    <div class="aspect-[3/4] rounded-lg overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJzYaDUBF5EFmkuS37bhoFlRR9BZZ7tD7fa4aUUcYdqVdX_sCL4YcaLgiUaJDtkWVQWD-lRmfyTCJxFIsI43AGqZU_1ZyrZB7mChnILCpSzyxMhfnP_mMgFglZ8HMHb5S3gruvJMxP4T07bgidyiPt8cY0FeDtr-o-ldUbfucIcDWIhWWQzr7iU7YQNTy4Ligh8PtTaCmBX0rniBx1QUG8w8qdmZmqpIRshwjmoTWGY-WE0dduYI-xI8MVvL0g5je4HnGlsrFxfwjJ" alt="Anemone"/>
+                    </div>
+                    <div class="px-2 pb-4">
+                        <h3 class="font-serif text-2xl text-on-surface">Twilight Anemone</h3>
+                        <p class="text-on-surface-variant font-label text-sm mt-1">$54.00</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="space-y-6 pt-24 cursor-pointer hover-lift rounded-lg overflow-hidden" onclick="window.location.href='product.html'">
+                    <div class="aspect-[3/4] rounded-lg overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ4ZSNyKejuui6KsScCaPbjYAvNZFVvCdwHlQEBSCtTVZRzAwtbn-y0zCkiBnGcmBqD0zkkmAgVXtcZMIpk2dbuOTqQpTml3quL225L6NA7543DilV3MvhLfOwubXwlkPtbrRiWJrmuVN9ghgvqHf-QBV4wDWBEu9SgJ98Ykjb4veyzsrAb2jewSLD0-Jn6p3bn6kfRHKqVOO8b5At0RvL5nQKgJ6QBOY7w24vzLhPikCez2GHr9HBfuuL4fYqtO3WD8GajDKwTjq0" alt="Sweet Pea"/>
+                    </div>
+                    <div class="px-2 pb-4">
+                        <h3 class="font-serif text-2xl text-on-surface">Wild Sweet Pea</h3>
+                        <p class="text-on-surface-variant font-label text-sm mt-1">$42.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Artifacts -->
+    <section class="py-32 px-8 md:px-12 bg-surface">
+        <div class="max-w-screen-2xl mx-auto">
+            <h2 class="text-center font-serif text-4xl mb-24 tracking-tight">Curated Artifacts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-8 h-auto md:min-h-[800px]">
+                <div class="md:col-span-2 md:row-span-2 bg-surface-container-low rounded-xl overflow-hidden relative group cursor-pointer" onclick="window.location.href='catalog.html'">
+                    <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHTRF6H6anIqr6n8fvIrTRd_XP9Oe_jo5WDm_1k31u4ekFGShSxOx0GIdeEmgf08B2m0ezTkkI_cT4GhjfbTE_Gr7tmEaI3Xtb83Y2aYMPJT3bSRotykyDZYbrGm-KMNyr2vARbQAeoSD62gTbe3PkAmvHBjjNUZrcUpa2-I2zby3rB3A7SeYLLmFE6cEEN12wBoQX0kcIBrAqOEENEF4FwY9xaSsxqUvAm_nQjGE3ZcxuHEoD_qJ6Th1W7SiCAsZ2eYBrYCDFXawZ" alt="Vessels"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex flex-col justify-end p-12 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-serif text-3xl">Hand-Thrown Vessels</p>
+                        <p class="text-white/80 font-label text-sm mt-2">New Arrival</p>
+                    </div>
+                </div>
+                <div class="md:col-span-2 bg-secondary-container/30 rounded-xl p-12 flex flex-col justify-center">
+                    <span class="text-secondary font-label uppercase tracking-widest text-xs mb-4">Sustainability First</span>
+                    <h3 class="text-3xl font-serif text-on-secondary-container mb-6 leading-snug">Every stem is sourced from regenerative farms across the coast.</h3>
+                    <a class="text-secondary font-medium font-label flex items-center gap-2" href="sustainability.html">Learn our process <span class="material-symbols-outlined">menu_book</span></a>
+                </div>
+                <div class="bg-tertiary-container/20 rounded-xl overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFNthd3IhyriU0DZh-Z0hHBOm-NOFDJFuPcFbvLTtEaAiO0H29O3pN4L5Y9esxHVvLkxjVcRuIUuIzVO1wVCSj0647_SCvAwhyW_aAgpL-IrYH5he02GF2m1tiFueMOLMnR_S_hMOLHhq4wCxkrox10HqK2NVBdblurWFzb3byfui0PMYl7CJ0dDXPIHgMy995oUcwlNqlO3IuOQU0zW3vXgOsomSECWXpUPkiyofQbgPk-5054suhvBHIRlhkmPQEvtMirstCUKI9" alt="Tools"/>
+                </div>
+                <div class="bg-surface-container-high rounded-xl overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnny26vsJ2syh08VppDt21L0Ppydxd_VKSMondd9ZtatAHZHpPSttJg84rQlcK4SLxNPqWhOR10Xd2yKW935FWvvLr3-X2O_myagt0-7ggBL9vMVBXhdc8w5619dhD5JLVpvivWL1yqTCnK6Er8z_krEt15XhVOlEduOYBq0ut77rJst5Nt1YCC-BkcsLGzpqCOBZOgLIBiMgSLAvlgqpbcQ4kBA8yzx_PUWxFDjGS5Ah9rNjOQLEKnxSYMZq9LupxcZkkVtLCdijY" alt="Seeds"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-32 px-8">
+        <div class="max-w-4xl mx-auto text-center bg-surface-container-lowest rounded-xl p-20 shadow-sm border border-outline-variant/10 relative overflow-hidden">
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
+            <h2 class="text-4xl font-serif text-on-surface mb-8 relative z-10">Join the Bloom Journal</h2>
+            <p class="text-on-surface-variant mb-10 max-w-lg mx-auto relative z-10">Receive monthly insights on floral care, seasonal styling, and exclusive atelier events.</p>
+            <form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto relative z-10">
+                <input class="flex-1 bg-surface-container-low border-none rounded-full px-8 py-4 focus:ring-1 focus:ring-primary/20 text-sm" placeholder="Your email address" type="email" required/>
+                <button class="primary-gradient text-white px-8 py-4 rounded-full font-label font-medium text-sm" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] bg-stone-100 mt-20">
+    <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-screen-2xl mx-auto">
+        <div class="mb-12 md:mb-0">
+            <div class="text-2xl font-serif text-primary mb-2">Bloom</div>
+            <p class="text-stone-500 font-sans uppercase tracking-widest text-[10px]">Botanical Atelier</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-x-12 gap-y-6">
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="sustainability.html">Sustainability</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Shipping</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Privacy</a>
+            <a class="text-stone-500 font-sans uppercase tracking-widest text-xs hover:underline underline-offset-4" href="#">Contact</a>
+        </div>
+        <div class="mt-12 md:mt-0 text-stone-500 font-sans uppercase tracking-widest text-xs">
+            © 2024 Bloom Botanical Atelier.
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
